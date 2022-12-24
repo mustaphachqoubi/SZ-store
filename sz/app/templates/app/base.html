@@ -29,10 +29,22 @@
           <button class="px-4 py-2 rounded-lg border-2 border-blue-500 hover:bg-blue-500 cursor-pointer text-blue-500 hover:text-white font-bold">Sign up</button>
         </div>
 
-        <div class="md:hidden">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white cursor-pointer cursor-pointer px-3 py-3 rounded-xl flex justify-center items-center">
+        <div class="md:hidden relative">
+          <button id="menu" class="bg-blue-500 hover:bg-blue-700 text-white cursor-pointer cursor-pointer px-3 py-3 rounded-xl flex justify-center items-center">
             <i class="text-xl fa-solid fa-bars"></i>
           </button>
+
+          <div id="menuList" class="hidden flex flex-col bg-white absolute right-0 mt-4 w-60 gap-8 rounded-lg p-3">
+            <ul class="flex flex-col items-center gap-10 text-md">
+              <li class="cursor-pointer w-full font-bold flex justify-center items-center">Home</li>
+              <li class="cursor-pointer w-full font-bold flex justify-center items-center">Products</li>
+              <li class="cursor-pointer w-full font-bold flex justify-center items-center">Contact us</li>
+            </ul>
+            <div>
+              <button class="m-1 w-full bg-blue-500 py-2 rounded-lg hover:blue-500 cursor-pointer border text-white font-bold hover:border hover:border-blue-500 hover:bg-blue-700">Sign in</button>
+              <button class="m-1 w-full py-2 rounded-lg border-2 border-blue-500 hover:bg-blue-500 cursor-pointer text-blue-500 hover:text-white font-bold">Sign up</button>
+            </div>
+          </div>
         </div>
       </nav>
 
